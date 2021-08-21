@@ -1,0 +1,56 @@
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&display=swap%27');
+
+*,html,::before,::after{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+$blue: #6C2EF2;
+$purple: #a6249d;
+$white: #fff;
+
+%padding {
+    padding: 75px 0;
+}
+
+//NavBar
+
+nav {
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5em 2em;
+
+    .logo {
+        font-size: 2rem;
+        font-family: Oleo Script Swash Caps;
+        color: $white;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        li,
+        a {
+            list-style: none;
+            font-family: 'Merriweather Sans';
+            font-weight: 400;
+            font-size: 1rem;
+            font-style: none;
+            text-decoration:none;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+    
+    @extend %padding;
+
+}
