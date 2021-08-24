@@ -11,6 +11,11 @@ nav {
   padding: 75px 0;
 }
 
+.container {
+  width: 1640px;
+  max-width: 90%;
+}
+
 nav {
   background-color: #6C2EF2;
   display: -webkit-box;
