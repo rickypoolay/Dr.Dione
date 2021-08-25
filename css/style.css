@@ -7,13 +7,65 @@
   padding: 0;
 }
 
-nav {
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+p {
+  font-family: 'Roboto';
+  font-size: 1.5625rem;
+  color: #fff;
+}
+
+nav, .img-text-overlap, .full-img-cta, .img-icon-text-cta {
   padding: 75px 0;
+}
+
+.btn {
+  -webkit-box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
 }
 
 .container {
   width: 1640px;
   max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  background-color: #6C2EF2;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 25px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
 }
 
 nav {
@@ -59,5 +111,145 @@ nav ul a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+}
+
+.img-text-overlap .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.img-text-overlap .container img {
+  width: 50%;
+}
+
+.img-text-overlap .text-box {
+  margin-left: -100px;
+  position: relative;
+  padding: 50px 32px;
+  text-align: center;
+  background-color: #a6249d;
+  color: #fff;
+}
+
+.img-text-overlap .text-box p {
+  text-align: left;
+}
+
+.img-text-overlap .btn {
+  position: absolute;
+  left: 50%;
+  bottom: -45px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.full-img-cta .img-text-container {
+  position: relative;
+  width: 100%;
+}
+
+.full-img-cta .img-text-container img {
+  width: 100%;
+}
+
+.full-img-cta .img-text-container .text-box {
+  position: absolute;
+  background-color: rgba(166, 36, 157, 0.5);
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 46px;
+}
+
+.full-img-cta .img-text-container .text-box p {
+  margin-bottom: 16px;
+}
+
+.img-icon-text-cta .background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #a6249d;
+}
+
+.img-icon-text-cta .background .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 46px 0;
+  height: 100%;
+  position: relative;
+}
+
+.img-icon-text-cta .background .container img {
+  width: 35em;
+  -webkit-transform: translateY(-185px);
+          transform: translateY(-185px);
+}
+
+.img-icon-text-cta .background .container .podium-icon {
+  background-color: #f27eea;
+  width: 20em;
+  padding: 50px 85px;
+}
+
+.img-icon-text-cta .background .container .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 680px;
+  height: 100%;
+}
+
+.img-icon-text-cta .background .container .text-box h2 {
+  text-align: center;
+}
+
+.img-icon-text-cta .background .container .text-box p {
+  text-align: left;
+  margin-bottom: 16px;
 }
 /*# sourceMappingURL=style.css.map */

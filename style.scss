@@ -3,15 +3,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&display=swap%27');
 
+
 *,html,::before,::after{
     box-sizing: border-box;
     margin:0;
     padding: 0;
+    // font-size: 12px;
 }
 
+//Variables
+
 $blue: #6C2EF2;
+$blueTranslucent: rgba(108, 46, 242, .5);
 $purple: #a6249d;
-$white: #fff;
+$purpleTranslucent:rgba(166, 36, 157, 0.5);
+$pink: rgba(242, 126, 234, 1);
+$text-color: #fff;
+
+//Global Styles
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color:$text-color;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 1.5625rem;
+    color:$text-color;
+}
 
 %padding {
     padding: 75px 0;
@@ -23,12 +52,19 @@ $white: #fff;
   box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
 }
 
-%btn {
+.container {
+    width: 1640px;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
   background-color: $blue;
   border-radius: 40px;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: $text-color;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -36,11 +72,9 @@ $white: #fff;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-}
+  font-weight: 400;
 
-.container {
-    width: 1640px;
-    max-width: 90%;
+  @extend %shadow;
 }
 
 //NavBar
@@ -55,7 +89,7 @@ nav {
     .logo {
         font-size: 2rem;
         font-family: Oleo Script Swash Caps;
-        color: $white;
+        color: $text-color;
     }
 
     ul {
@@ -73,10 +107,133 @@ nav {
             font-style: none;
             text-decoration:none;
             text-transform: uppercase;
-            color: $white;
+            color: $text-color;
+        }
+    }   
+    @extend %padding;
+}
+
+//Home Psychology Section
+
+.img-text-overlap {
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        // transform: translateX(75px);
+
+        img {
+            width: 50%;
         }
     }
-    
-    @extend %padding;
 
+    .text-box {
+        margin-left: -100px;
+        position: relative;
+        padding: 50px 32px;
+        text-align: center;
+        background-color: $purple;
+        color: $text-color;
+        p {
+            text-align: left;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        left:50%;
+        bottom:-45px;
+        transform: translateX(-50%);
+    }
+
+    @extend %padding;
+}
+
+//Jarc Page Jarc Section
+
+.full-img-cta {
+    .img-text-container {
+        position: relative;
+        width: 100%;
+    
+        img{
+            width: 100%;
+            // height: 10em;
+        }
+
+        .text-box {
+            position: absolute;
+            background-color: $purpleTranslucent;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 46px;
+
+            p {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    @extend %padding;
+}
+
+//Jarc Page : Orange Tent Section
+
+.img-icon-text-cta {
+    
+    .background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: $purple;
+        
+        .container {
+            justify-content: space-between;
+            padding: 46px 0;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 35em;
+                transform: translateY(-185px)
+            }
+
+            .podium-icon {
+                background-color: $pink;
+                width: 20em;
+                padding: 50px 85px;
+                // position: absolute;
+                // top: 95px;
+                // right:220px;
+            }
+
+            .text-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 680px;
+                height: 100%;
+                
+                h2 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: left;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+@extend %padding;
 }
