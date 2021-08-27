@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Dr Dione</title>
+    
 </head>
 <body>
     <!--NavBar-->
     <nav>
-        <p class='logo' >Dr Dione</p>
+        <a href='#' aria-label="Dr.Dione logo to homepage link" class='logo' >Dr Dione</a>
         <ul>
             <li><a href='#'>About</a></li>
             <li><a href='#'>Psychology</a></li>
@@ -45,6 +47,28 @@
             </div>
         </div>
     </section>
+
+    <!--Home page | JARC Section -->
+    <section class='full-img-cta'id="home-jarc">
+        
+        <!--Slick-->
+        <div class="slick">
+            <div><h1>Lorem</h1></div>
+            <div><h1>Lorem Ipsum</h1></div>
+            <div><h1>Ipsum</h1></div>
+            <div><h1>4</h1></div>
+            <div><h1>5</h1></div>
+          </div>
+          <!--Main Section-->
+        <div class="img-text-container">
+            <img src="./images/home-jarc.png" alt="">
+            <div class="text-box">
+                <h2>JARC</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <div class = 'btn'>Learn More</div>
+            </div>
+        </div>
+    </section>
     
     <!--Psychology Page | 3rd Section-->
     <section class="full-img-cta" id='psychology-section3'>
@@ -64,7 +88,7 @@
             <div class="container">
                 <img src="./images/Jarc-tent.png" alt="Jarc-outside-tent-speaker">
                 <div class="text-box">
-                    <!-- <img class='podium-icon' src="./images/podium-icon.png" alt="Podium-Icon"> -->
+                    <svg class = 'podium-icon' width="237" height="176" viewBox="0 0 237 176" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><rect x="4" width="229" height="168" fill="#F27EEA"/></g><path d="M135.372 109.071C133.015 109.071 131.099 107.155 131.099 104.799C131.099 103.998 130.451 103.349 129.649 103.349H108.345C107.544 103.349 106.896 103.998 106.896 104.799C106.896 107.155 104.979 109.071 102.623 109.071C101.822 109.071 101.173 109.72 101.173 110.521V117.405C101.173 118.206 101.822 118.854 102.623 118.854C104.979 118.854 106.896 120.77 106.896 123.127C106.896 123.928 107.544 124.576 108.345 124.576H129.649C130.451 124.576 131.099 123.928 131.099 123.127C131.099 120.77 133.015 118.854 135.372 118.854C136.173 118.854 136.821 118.206 136.821 117.405V110.521C136.821 109.72 136.173 109.071 135.372 109.071ZM133.922 116.103C131.128 116.679 128.923 118.884 128.347 121.678H109.647C109.071 118.884 106.866 116.679 104.072 116.103V111.823C106.866 111.247 109.071 109.042 109.647 106.248H128.347C128.923 109.042 131.128 111.247 133.922 111.823V116.103V116.103Z" fill="white"/><path d="M148.732 105.06C149.232 105.06 149.696 104.803 149.961 104.38L156.903 93.278C157.047 93.0473 157.123 92.7813 157.123 92.5095V82.9732C157.123 82.1721 156.475 81.5239 155.674 81.5239H138.668V72.807C138.668 64.0493 132.967 56.5237 124.74 54.0193C126.85 52.33 128.207 49.7378 128.207 46.8305C128.207 41.7509 124.076 37.6196 118.996 37.6196C113.917 37.6196 109.786 41.7509 109.786 46.8305C109.786 49.7323 111.137 52.3206 113.24 54.01C105.029 56.5296 99.3265 64.1895 99.3265 72.807V81.5239H92.1031L90.9295 75.131C89.9975 70.0029 91.7656 64.8135 95.5208 61.3002C96.2721 61.7137 97.1218 61.97 98.0386 61.97C100.943 61.97 103.305 59.6079 103.305 56.7051C103.305 53.8136 100.943 51.4599 98.0386 51.4599C95.1344 51.4599 92.7722 53.8136 92.7722 56.7051C92.7722 57.6248 93.0302 58.4771 93.4466 59.2303C89.0236 63.4123 86.9744 69.5791 88.0791 75.6518L89.1568 81.5239H82.3258C81.5248 81.5239 80.8766 82.1721 80.8766 82.9732V92.5095C80.8766 92.7813 80.953 93.0474 81.0973 93.278L88.0394 104.38C88.3041 104.803 88.7683 105.06 89.2679 105.06H95.3693V127.482H86.0849C85.2838 127.482 84.6356 128.13 84.6356 128.931C84.6356 129.732 85.2838 130.38 86.0849 130.38C105.537 130.38 132.539 130.38 151.901 130.38C152.702 130.38 153.35 129.732 153.35 128.931C153.35 128.13 152.702 127.482 151.901 127.482H142.617V105.06H148.732V105.06ZM98.0386 54.3585C99.3435 54.3585 100.406 55.4115 100.406 56.7051C100.406 58.01 99.3435 59.0715 98.0386 59.0715C96.7337 59.0715 95.6708 58.01 95.6708 56.7051C95.6708 55.4115 96.7337 54.3585 98.0386 54.3585ZM118.996 40.5182C122.477 40.5182 125.309 43.3502 125.309 46.8305C125.309 50.3107 122.477 53.1427 118.996 53.1427C115.516 53.1427 112.684 50.3107 112.684 46.8305C112.684 43.3502 115.516 40.5182 118.996 40.5182ZM102.225 72.807C102.225 65.3328 107.251 58.6936 114.438 56.664C117.423 55.8375 120.558 55.8389 123.54 56.6626C130.435 58.5885 135.769 64.9469 135.769 72.807V81.5239H130.159V70.7761C130.159 69.975 129.511 69.3268 128.71 69.3268C127.909 69.3268 127.26 69.975 127.26 70.7761V81.5239H110.732V70.7761C110.732 69.975 110.084 69.3268 109.283 69.3268C108.482 69.3268 107.834 69.975 107.834 70.7761V81.5239H102.225V72.807V72.807ZM90.0704 102.162L83.7751 92.0934V84.4225C122.207 84.4288 118.667 84.4284 154.225 84.4225V92.0934L147.93 102.162H142.617V99.003C142.617 98.2019 141.968 97.5537 141.167 97.5537H96.8186C96.0175 97.5537 95.3693 98.2019 95.3693 99.003V102.162H90.0704ZM98.2679 127.482C98.2679 120.247 98.2679 106.466 98.2679 100.452H139.718C139.718 106.469 139.718 120.238 139.718 127.482H98.2679Z" fill="white"/><defs><filter id="filter0_d" x="0" y="0" width="237" height="176" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>  
                     <h2>Lorem Ipsum Dolor</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     <div class='btn'>Learn More</div>
@@ -72,5 +96,34 @@
             </div>
         </div>
     </section>
+    <section class = 'img-icon-text-cta' id='speaking-keynotes-section'>
+        <div class="background">
+            <div class="container">
+                <img src="./images/home-speaking-keynotes.png" alt="Homepage Speaking Keynote Image">
+                <div class="text-box">
+                    <svg class = 'podium-icon' width="237" height="176" viewBox="0 0 237 176" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><rect x="4" width="229" height="168" fill="#F27EEA"/></g><path d="M135.372 109.071C133.015 109.071 131.099 107.155 131.099 104.799C131.099 103.998 130.451 103.349 129.649 103.349H108.345C107.544 103.349 106.896 103.998 106.896 104.799C106.896 107.155 104.979 109.071 102.623 109.071C101.822 109.071 101.173 109.72 101.173 110.521V117.405C101.173 118.206 101.822 118.854 102.623 118.854C104.979 118.854 106.896 120.77 106.896 123.127C106.896 123.928 107.544 124.576 108.345 124.576H129.649C130.451 124.576 131.099 123.928 131.099 123.127C131.099 120.77 133.015 118.854 135.372 118.854C136.173 118.854 136.821 118.206 136.821 117.405V110.521C136.821 109.72 136.173 109.071 135.372 109.071ZM133.922 116.103C131.128 116.679 128.923 118.884 128.347 121.678H109.647C109.071 118.884 106.866 116.679 104.072 116.103V111.823C106.866 111.247 109.071 109.042 109.647 106.248H128.347C128.923 109.042 131.128 111.247 133.922 111.823V116.103V116.103Z" fill="white"/><path d="M148.732 105.06C149.232 105.06 149.696 104.803 149.961 104.38L156.903 93.278C157.047 93.0473 157.123 92.7813 157.123 92.5095V82.9732C157.123 82.1721 156.475 81.5239 155.674 81.5239H138.668V72.807C138.668 64.0493 132.967 56.5237 124.74 54.0193C126.85 52.33 128.207 49.7378 128.207 46.8305C128.207 41.7509 124.076 37.6196 118.996 37.6196C113.917 37.6196 109.786 41.7509 109.786 46.8305C109.786 49.7323 111.137 52.3206 113.24 54.01C105.029 56.5296 99.3265 64.1895 99.3265 72.807V81.5239H92.1031L90.9295 75.131C89.9975 70.0029 91.7656 64.8135 95.5208 61.3002C96.2721 61.7137 97.1218 61.97 98.0386 61.97C100.943 61.97 103.305 59.6079 103.305 56.7051C103.305 53.8136 100.943 51.4599 98.0386 51.4599C95.1344 51.4599 92.7722 53.8136 92.7722 56.7051C92.7722 57.6248 93.0302 58.4771 93.4466 59.2303C89.0236 63.4123 86.9744 69.5791 88.0791 75.6518L89.1568 81.5239H82.3258C81.5248 81.5239 80.8766 82.1721 80.8766 82.9732V92.5095C80.8766 92.7813 80.953 93.0474 81.0973 93.278L88.0394 104.38C88.3041 104.803 88.7683 105.06 89.2679 105.06H95.3693V127.482H86.0849C85.2838 127.482 84.6356 128.13 84.6356 128.931C84.6356 129.732 85.2838 130.38 86.0849 130.38C105.537 130.38 132.539 130.38 151.901 130.38C152.702 130.38 153.35 129.732 153.35 128.931C153.35 128.13 152.702 127.482 151.901 127.482H142.617V105.06H148.732V105.06ZM98.0386 54.3585C99.3435 54.3585 100.406 55.4115 100.406 56.7051C100.406 58.01 99.3435 59.0715 98.0386 59.0715C96.7337 59.0715 95.6708 58.01 95.6708 56.7051C95.6708 55.4115 96.7337 54.3585 98.0386 54.3585ZM118.996 40.5182C122.477 40.5182 125.309 43.3502 125.309 46.8305C125.309 50.3107 122.477 53.1427 118.996 53.1427C115.516 53.1427 112.684 50.3107 112.684 46.8305C112.684 43.3502 115.516 40.5182 118.996 40.5182ZM102.225 72.807C102.225 65.3328 107.251 58.6936 114.438 56.664C117.423 55.8375 120.558 55.8389 123.54 56.6626C130.435 58.5885 135.769 64.9469 135.769 72.807V81.5239H130.159V70.7761C130.159 69.975 129.511 69.3268 128.71 69.3268C127.909 69.3268 127.26 69.975 127.26 70.7761V81.5239H110.732V70.7761C110.732 69.975 110.084 69.3268 109.283 69.3268C108.482 69.3268 107.834 69.975 107.834 70.7761V81.5239H102.225V72.807V72.807ZM90.0704 102.162L83.7751 92.0934V84.4225C122.207 84.4288 118.667 84.4284 154.225 84.4225V92.0934L147.93 102.162H142.617V99.003C142.617 98.2019 141.968 97.5537 141.167 97.5537H96.8186C96.0175 97.5537 95.3693 98.2019 95.3693 99.003V102.162H90.0704ZM98.2679 127.482C98.2679 120.247 98.2679 106.466 98.2679 100.452H139.718C139.718 106.469 139.718 120.238 139.718 127.482H98.2679Z" fill="white"/><defs><filter id="filter0_d" x="0" y="0" width="237" height="176" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>  
+                    <h2>Speaking/Keynotes</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <div class='btn'>Learn More</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = 'video-section'>
+        <div class="video-player">
+
+            <video class='video' poster="./videos/Truth&Heart-video-poster.png" playsinline='' src="./videos/Ceder point fright nights.mp4"></video>
+
+            <div class="player-controls">
+                <div class ='play-button'>
+                    <p title='Play'>Play Video</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
